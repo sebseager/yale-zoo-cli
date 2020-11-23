@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import sys
 import os
 from argparse import ArgumentParser
@@ -126,8 +128,6 @@ if __name__ == '__main__':
     dn_parser.add_argument('local_dest', help='Path to local destination directory')
     dn_parser.add_argument('-c', action='store_true',
                            help="Interpret zoo_path as relative to your class' directory in /home/classes/")
-
-    # sys.argv = ['zoo.py', 'up', '0', '/Users/seb/Desktop/hw7.rkt', 'cs201/hw0', '--test', '0', '1', '2', '-v']
 
     args = parser.parse_args()
 
